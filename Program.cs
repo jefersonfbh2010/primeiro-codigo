@@ -1,12 +1,15 @@
-﻿Console.Write("Digite um número: ");
-
+Console.WriteLine("solicitar nota do estudante:");
 int variavelQueSalvaUmNumero = int.Parse(Console.ReadLine()!);
 
-if (variavelQueSalvaUmNumero % 2 == 0)
+if (variavelQueSalvaUmNumero >= 7) 
 {
-    Console.WriteLine($"Número {variavelQueSalvaUmNumero} é par");
+    Console.Write("aprovado");
 }
-else
+else if (variavelQueSalvaUmNumero >= 5) 
 {
-    Console.WriteLine($"Número {variavelQueSalvaUmNumero} é ímpar");
+    Console.Write("recuperação");
+}
+else 
+{
+    Console.Write("reprovado");
 }
