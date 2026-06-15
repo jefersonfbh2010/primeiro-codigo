@@ -1,20 +1,15 @@
 Console.WriteLine("Informe o valor total da compra:");
 
-double valorCompra = double.Parse(Console.ReadLine());
+double valorCompra = double.Parse(Console.ReadLine()!);
 
-double desconto;
-double valorFinal;
+double desconto = 0;
 
 if (valorCompra >= 200)
 {
     desconto = valorCompra * 0.10;
 }
-else
-{
-    desconto = 0;
-}
 
-valorFinal = valorCompra - desconto;
+double valorFinal = valorCompra - desconto;
 
 Console.WriteLine("Valor original: R$ " + valorCompra);
 Console.WriteLine("Desconto aplicado: R$ " + desconto);
